@@ -26,7 +26,7 @@ class Solution:
             r, c = stack.pop()
 
             # If outbound, continue to next item
-            if not (0 <= r < rows or 0 <= c < cols):
+            if not (0 <= r < rows and 0 <= c < cols):
                 continue
 
             # Check if it's not the same color
